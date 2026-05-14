@@ -19,6 +19,7 @@
 		B05CDDE02FB3D6D70047D632 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05CDDC52FB3D5530047D632 /* WidgetKit.framework */; };
 		B05CDDE12FB3D6D70047D632 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05CDDC72FB3D5530047D632 /* SwiftUI.framework */; };
 		B05CDDF22FB3D6D80047D632 /* WeatherWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B05CDDDF2FB3D6D70047D632 /* WeatherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B074AD932FB684AC009FDA38 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B074AD922FB68498009FDA38 /* README.md */; };
 		B083D9802FB3E0A500806E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B083D97F2FB3E0A500806E1B /* LaunchScreen.storyboard */; };
 		B086E5D62FAD39330084ABB3 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086E5D52FAD39320084ABB3 /* NotificationManager.swift */; };
 		B08FF5E32F95BC8400E00B95 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08FF5E22F95BC8400E00B95 /* ThemeManager.swift */; };
@@ -71,6 +72,7 @@
 		B05CDDC52FB3D5530047D632 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		B05CDDC72FB3D5530047D632 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		B05CDDDF2FB3D6D70047D632 /* WeatherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeatherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B074AD922FB68498009FDA38 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B07960772F74A48A00798BBD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		B083D97F2FB3E0A500806E1B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B086E5D52FAD39320084ABB3 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				B0B18C3C2F8856010065E4BA /* ChangePasswordView.swift */,
 				B0B18C362F84753C0065E4BA /* PersonalInfoView.swift */,
 				B0B18C342F8473FD0065E4BA /* AboutView.swift */,
+				B074AD922FB68498009FDA38 /* README.md */,
 				B0B18C322F84729E0065E4BA /* NotificationsSettingsView.swift */,
 				B096030C2F81426100969A9A /* AccountView.swift */,
 			);
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B083D9802FB3E0A500806E1B /* LaunchScreen.storyboard in Resources */,
+				B074AD932FB684AC009FDA38 /* README.md in Resources */,
 				B05CDDBE2FB28F360047D632 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
