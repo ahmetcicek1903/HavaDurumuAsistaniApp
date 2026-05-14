@@ -25,12 +25,12 @@ Modern SwiftUI teknolojileri ve MVVM mimarisi ile geliştirilmiş, anlık meteor
 
 | Ana Ekran | Şehir Arama | Favori Şehirler |
 | :---: | :---: | :---: |
-| <img src="IMG_6920.jpg" width="200"> | <img src="IMG_6923.jpg" width="200"> | <img src="IMG_6924.jpg" width="200"> |
+| <img src="IMG_6920.PNG" width="200"> | <img src="IMG_6923.PNG" width="200"> | <img src="IMG_6924.PNG" width="200"> |
 | *Anlık Hava Durumu* | *Global Şehir Arama* | *Hızlı Erişim Listesi* |
 
 | Giriş & Kayıt | Uygulama Ayarları | Hakkımızda |
 | :---: | :---: | :---: |
-| <img src="IMG_6926.jpg" width="200"> | <img src="IMG_6927.jpg" width="200"> | <img src="IMG_6928.jpg" width="200"> |
+| <img src="IMG_6926.PNG" width="200"> | <img src="IMG_6927.PNG" width="200"> | <img src="IMG_6928.PNG" width="200"> |
 | *Güvenli Bulut Bağlantısı* | *Kişiselleştirme* | *Kurumsal Künye* |
 
 ---
