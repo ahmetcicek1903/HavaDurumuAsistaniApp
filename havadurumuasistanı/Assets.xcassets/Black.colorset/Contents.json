@@ -1,0 +1,51 @@
+{
+  "colors" : [
+    {
+      "color" : {
+        "platform" : "universal",
+        "reference" : "labelColor"
+      },
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "darkTextColor"
+      },
+      "idiom" : "universal"
+    },
+    {
+      "color" : {
+        "platform" : "ios",
+        "reference" : "darkTextColor"
+      },
+      "idiom" : "iphone"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "color" : {
+        "platform" : "ios",
+        "reference" : "darkTextColor"
+      },
+      "idiom" : "iphone"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}

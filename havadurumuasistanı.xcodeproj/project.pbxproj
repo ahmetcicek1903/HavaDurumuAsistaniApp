@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B040246F2F7AC624006B07FB /* WeatherDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B040246E2F7AC624006B07FB /* WeatherDetailView.swift */; };
+		B04F62842F639C9C0001F92D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F62812F639C9C0001F92D /* ContentView.swift */; };
+		B04F62852F639C9C0001F92D /* havadurumuasistan_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04F62822F639C9C0001F92D /* havadurumuasistan_App.swift */; };
+		B0571C362FAD07B1005D688A /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0571C352FAD07B1005D688A /* AuthManager.swift */; };
+		B0571C382FAD0848005D688A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0571C372FAD0848005D688A /* LoginView.swift */; };
+		B05CDDB42FB28B340047D632 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B05CDDB32FB28B340047D632 /* GoogleSignIn */; };
+		B05CDDB62FB28B340047D632 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B05CDDB52FB28B340047D632 /* GoogleSignInSwift */; };
+		B05CDDBC2FB28CD40047D632 /* SocialLoginButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CDDBB2FB28CD40047D632 /* SocialLoginButtonsView.swift */; };
+		B05CDDBE2FB28F360047D632 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B05CDDBD2FB28F360047D632 /* GoogleService-Info.plist */; };
+		B05CDDE02FB3D6D70047D632 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05CDDC52FB3D5530047D632 /* WidgetKit.framework */; };
+		B05CDDE12FB3D6D70047D632 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05CDDC72FB3D5530047D632 /* SwiftUI.framework */; };
+		B05CDDF22FB3D6D80047D632 /* WeatherWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B05CDDDF2FB3D6D70047D632 /* WeatherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B083D9802FB3E0A500806E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B083D97F2FB3E0A500806E1B /* LaunchScreen.storyboard */; };
+		B086E5D62FAD39330084ABB3 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086E5D52FAD39320084ABB3 /* NotificationManager.swift */; };
+		B08FF5E32F95BC8400E00B95 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08FF5E22F95BC8400E00B95 /* ThemeManager.swift */; };
+		B096030D2F81426100969A9A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B096030C2F81426100969A9A /* AccountView.swift */; };
+		B09A59E32F64DFD900F4FFA3 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B09A59E22F64DFD900F4FFA3 /* FirebaseAuth */; };
+		B09A59E52F64DFD900F4FFA3 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B09A59E42F64DFD900F4FFA3 /* FirebaseFirestore */; };
+		B0B18C332F84729E0065E4BA /* NotificationsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B18C322F84729E0065E4BA /* NotificationsSettingsView.swift */; };
+		B0B18C352F8473FD0065E4BA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B18C342F8473FD0065E4BA /* AboutView.swift */; };
+		B0B18C372F84753C0065E4BA /* PersonalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B18C362F84753C0065E4BA /* PersonalInfoView.swift */; };
+		B0B18C392F85740F0065E4BA /* SecurityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B18C382F85740F0065E4BA /* SecurityView.swift */; };
+		B0B18C3B2F88550B0065E4BA /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B18C3A2F88550B0065E4BA /* ChangeEmail.swift */; };
+		B0B18C3D2F8856010065E4BA /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B18C3C2F8856010065E4BA /* ChangePasswordView.swift */; };
+		B0E192132F88603B003F9B9E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E192122F88603B003F9B9E /* OnboardingView.swift */; };
+		B0FE8DFA2F74C1FF00023FA2 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07960772F74A48A00798BBD /* WeatherViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B05CDDF02FB3D6D80047D632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B01367552F639C6D00280509 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B05CDDDE2FB3D6D70047D632;
+			remoteInfo = WeatherWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B05CDDDA2FB3D5550047D632 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B05CDDF22FB3D6D80047D632 /* WeatherWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B013675D2F639C6D00280509 /* havadurumuasistanı.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "havadurumuasistanı.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B040246E2F7AC624006B07FB /* WeatherDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailView.swift; sourceTree = SOURCE_ROOT; };
+		B04F62812F639C9C0001F92D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B04F62822F639C9C0001F92D /* havadurumuasistan_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = havadurumuasistan_App.swift; sourceTree = "<group>"; };
+		B0571C352FAD07B1005D688A /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B0571C372FAD0848005D688A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B05CDDBB2FB28CD40047D632 /* SocialLoginButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButtonsView.swift; sourceTree = "<group>"; };
+		B05CDDBD2FB28F360047D632 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B05CDDC52FB3D5530047D632 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B05CDDC72FB3D5530047D632 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B05CDDDF2FB3D6D70047D632 /* WeatherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WeatherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B07960772F74A48A00798BBD /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		B083D97F2FB3E0A500806E1B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B086E5D52FAD39320084ABB3 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B08FF5E22F95BC8400E00B95 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		B096030C2F81426100969A9A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		B0B18C322F84729E0065E4BA /* NotificationsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsSettingsView.swift; sourceTree = "<group>"; };
+		B0B18C342F8473FD0065E4BA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B0B18C362F84753C0065E4BA /* PersonalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoView.swift; sourceTree = "<group>"; };
+		B0B18C382F85740F0065E4BA /* SecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityView.swift; sourceTree = "<group>"; };
+		B0B18C3A2F88550B0065E4BA /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
+		B0B18C3C2F8856010065E4BA /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		B0E192122F88603B003F9B9E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B05CDDF62FB3D6D80047D632 /* Exceptions for "WeatherWidget" folder in "WeatherWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B05CDDDE2FB3D6D70047D632 /* WeatherWidgetExtension */;
+		};
+		B09A59EA2F64E7CF00F4FFA3 /* Exceptions for "WeatherDataServices" folder in "havadurumuasistanı" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				LocationManager.swift,
+				LocationSearchService.swift,
+				WeatherServices.swift,
+			);
+			target = B013675C2F639C6D00280509 /* havadurumuasistanı */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B013675F2F639C6D00280509 /* havadurumuasistanı */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "havadurumuasistanı";
+			sourceTree = "<group>";
+		};
+		B04F628A2F639DD50001F92D /* WeatherDataServices */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B09A59EA2F64E7CF00F4FFA3 /* Exceptions for "WeatherDataServices" folder in "havadurumuasistanı" target */,
+			);
+			path = WeatherDataServices;
+			sourceTree = "<group>";
+		};
+		B05CDDE22FB3D6D70047D632 /* WeatherWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B05CDDF62FB3D6D80047D632 /* Exceptions for "WeatherWidget" folder in "WeatherWidgetExtension" target */,
+			);
+			path = WeatherWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B013675A2F639C6D00280509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09A59E32F64DFD900F4FFA3 /* FirebaseAuth in Frameworks */,
+				B09A59E52F64DFD900F4FFA3 /* FirebaseFirestore in Frameworks */,
+				B05CDDB42FB28B340047D632 /* GoogleSignIn in Frameworks */,
+				B05CDDB62FB28B340047D632 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05CDDDC2FB3D6D70047D632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05CDDE12FB3D6D70047D632 /* SwiftUI.framework in Frameworks */,
+				B05CDDE02FB3D6D70047D632 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B01367542F639C6D00280509 = {
+			isa = PBXGroup;
+			children = (
+				B074AD912FB65113009FDA38 /* Profile&Settings */,
+				B05CDDBD2FB28F360047D632 /* GoogleService-Info.plist */,
+				B04F628B2F639E600001F92D /* App */,
+				B04F62892F639DAD0001F92D /* services */,
+				B04F62882F639DA70001F92D /* viewmodels */,
+				B04F62872F639D990001F92D /* views */,
+				B04F62862F639D8D0001F92D /* Models */,
+				B013675F2F639C6D00280509 /* havadurumuasistanı */,
+				B05CDDE22FB3D6D70047D632 /* WeatherWidget */,
+				B05CDDC42FB3D5530047D632 /* Frameworks */,
+				B013675E2F639C6D00280509 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B013675E2F639C6D00280509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B013675D2F639C6D00280509 /* havadurumuasistanı.app */,
+				B05CDDDF2FB3D6D70047D632 /* WeatherWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B04F62862F639D8D0001F92D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B04F62872F639D990001F92D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B04F62812F639C9C0001F92D /* ContentView.swift */,
+				B040246E2F7AC624006B07FB /* WeatherDetailView.swift */,
+				B0E192122F88603B003F9B9E /* OnboardingView.swift */,
+				B0571C352FAD07B1005D688A /* AuthManager.swift */,
+				B0571C372FAD0848005D688A /* LoginView.swift */,
+				B086E5D52FAD39320084ABB3 /* NotificationManager.swift */,
+				B05CDDBB2FB28CD40047D632 /* SocialLoginButtonsView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B04F62882F639DA70001F92D /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				B07960772F74A48A00798BBD /* WeatherViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		B04F62892F639DAD0001F92D /* services */ = {
+			isa = PBXGroup;
+			children = (
+				B04F628A2F639DD50001F92D /* WeatherDataServices */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		B04F628B2F639E600001F92D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B08FF5E22F95BC8400E00B95 /* ThemeManager.swift */,
+				B04F62822F639C9C0001F92D /* havadurumuasistan_App.swift */,
+				B083D97F2FB3E0A500806E1B /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B05CDDC42FB3D5530047D632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B05CDDC52FB3D5530047D632 /* WidgetKit.framework */,
+				B05CDDC72FB3D5530047D632 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B074AD912FB65113009FDA38 /* Profile&Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B0B18C382F85740F0065E4BA /* SecurityView.swift */,
+				B0B18C3A2F88550B0065E4BA /* ChangeEmail.swift */,
+				B0B18C3C2F8856010065E4BA /* ChangePasswordView.swift */,
+				B0B18C362F84753C0065E4BA /* PersonalInfoView.swift */,
+				B0B18C342F8473FD0065E4BA /* AboutView.swift */,
+				B0B18C322F84729E0065E4BA /* NotificationsSettingsView.swift */,
+				B096030C2F81426100969A9A /* AccountView.swift */,
+			);
+			path = "Profile&Settings";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B013675C2F639C6D00280509 /* havadurumuasistanı */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01367662F639C6D00280509 /* Build configuration list for PBXNativeTarget "havadurumuasistanı" */;
+			buildPhases = (
+				B01367592F639C6D00280509 /* Sources */,
+				B013675A2F639C6D00280509 /* Frameworks */,
+				B013675B2F639C6D00280509 /* Resources */,
+				B05CDDDA2FB3D5550047D632 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B05CDDF12FB3D6D80047D632 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B013675F2F639C6D00280509 /* havadurumuasistanı */,
+			);
+			name = "havadurumuasistanı";
+			packageProductDependencies = (
+				B09A59E22F64DFD900F4FFA3 /* FirebaseAuth */,
+				B09A59E42F64DFD900F4FFA3 /* FirebaseFirestore */,
+				B05CDDB32FB28B340047D632 /* GoogleSignIn */,
+				B05CDDB52FB28B340047D632 /* GoogleSignInSwift */,
+			);
+			productName = "havadurumuasistanı";
+			productReference = B013675D2F639C6D00280509 /* havadurumuasistanı.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B05CDDDE2FB3D6D70047D632 /* WeatherWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B05CDDF32FB3D6D80047D632 /* Build configuration list for PBXNativeTarget "WeatherWidgetExtension" */;
+			buildPhases = (
+				B05CDDDB2FB3D6D70047D632 /* Sources */,
+				B05CDDDC2FB3D6D70047D632 /* Frameworks */,
+				B05CDDDD2FB3D6D70047D632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B05CDDE22FB3D6D70047D632 /* WeatherWidget */,
+			);
+			name = WeatherWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = WeatherWidgetExtension;
+			productReference = B05CDDDF2FB3D6D70047D632 /* WeatherWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B01367552F639C6D00280509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					B013675C2F639C6D00280509 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					B05CDDDE2FB3D6D70047D632 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = B01367582F639C6D00280509 /* Build configuration list for PBXProject "havadurumuasistanı" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B01367542F639C6D00280509;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B09A59E12F64DFD900F4FFA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B05CDDB22FB28B340047D632 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B013675E2F639C6D00280509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B013675C2F639C6D00280509 /* havadurumuasistanı */,
+				B05CDDDE2FB3D6D70047D632 /* WeatherWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B013675B2F639C6D00280509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B083D9802FB3E0A500806E1B /* LaunchScreen.storyboard in Resources */,
+				B05CDDBE2FB28F360047D632 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05CDDDD2FB3D6D70047D632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B01367592F639C6D00280509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08FF5E32F95BC8400E00B95 /* ThemeManager.swift in Sources */,
+				B0B18C332F84729E0065E4BA /* NotificationsSettingsView.swift in Sources */,
+				B040246F2F7AC624006B07FB /* WeatherDetailView.swift in Sources */,
+				B0B18C3D2F8856010065E4BA /* ChangePasswordView.swift in Sources */,
+				B0B18C372F84753C0065E4BA /* PersonalInfoView.swift in Sources */,
+				B0FE8DFA2F74C1FF00023FA2 /* WeatherViewModel.swift in Sources */,
+				B05CDDBC2FB28CD40047D632 /* SocialLoginButtonsView.swift in Sources */,
+				B0B18C352F8473FD0065E4BA /* AboutView.swift in Sources */,
+				B0571C362FAD07B1005D688A /* AuthManager.swift in Sources */,
+				B0571C382FAD0848005D688A /* LoginView.swift in Sources */,
+				B0B18C3B2F88550B0065E4BA /* ChangeEmail.swift in Sources */,
+				B0B18C392F85740F0065E4BA /* SecurityView.swift in Sources */,
+				B096030D2F81426100969A9A /* AccountView.swift in Sources */,
+				B086E5D62FAD39330084ABB3 /* NotificationManager.swift in Sources */,
+				B04F62842F639C9C0001F92D /* ContentView.swift in Sources */,
+				B04F62852F639C9C0001F92D /* havadurumuasistan_App.swift in Sources */,
+				B0E192132F88603B003F9B9E /* OnboardingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05CDDDB2FB3D6D70047D632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B05CDDF12FB3D6D80047D632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B05CDDDE2FB3D6D70047D632 /* WeatherWidgetExtension */;
+			targetProxy = B05CDDF02FB3D6D80047D632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B01367642F639C6D00280509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3DUALHZ9U3;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B01367652F639C6D00280509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3DUALHZ9U3;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B01367672F639C6D00280509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3DUALHZ9U3;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "havadurumuasistan--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hava Durumu Asistanı";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Mevcut konumunuzu kullanmamız için izin veriyor musunuz? ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Mevcut konumunuzu görüntülemek için canlı konumunuzu paylaşmanız gerekiyor?";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmetcicek.havadurumuasistan-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		B01367682F639C6D00280509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = 3DUALHZ9U3;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "havadurumuasistan--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Hava Durumu Asistanı";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Mevcut konumunuzu kullanmamız için izin veriyor musunuz? ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Mevcut konumunuzu görüntülemek için canlı konumunuzu paylaşmanız gerekiyor?";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmetcicek.havadurumuasistan-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		B05CDDF42FB3D6D80047D632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3DUALHZ9U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmetcicek.havadurumuasistan-.WeatherWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B05CDDF52FB3D6D80047D632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3DUALHZ9U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WeatherWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmetcicek.havadurumuasistan-.WeatherWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B01367582F639C6D00280509 /* Build configuration list for PBXProject "havadurumuasistanı" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01367642F639C6D00280509 /* Debug */,
+				B01367652F639C6D00280509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01367662F639C6D00280509 /* Build configuration list for PBXNativeTarget "havadurumuasistanı" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01367672F639C6D00280509 /* Debug */,
+				B01367682F639C6D00280509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B05CDDF32FB3D6D80047D632 /* Build configuration list for PBXNativeTarget "WeatherWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05CDDF42FB3D6D80047D632 /* Debug */,
+				B05CDDF52FB3D6D80047D632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B05CDDB22FB28B340047D632 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+		B09A59E12F64DFD900F4FFA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B05CDDB32FB28B340047D632 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B05CDDB22FB28B340047D632 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		B05CDDB52FB28B340047D632 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B05CDDB22FB28B340047D632 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		B09A59E22F64DFD900F4FFA3 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B09A59E12F64DFD900F4FFA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B09A59E42F64DFD900F4FFA3 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B09A59E12F64DFD900F4FFA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B01367552F639C6D00280509 /* Project object */;
+}
